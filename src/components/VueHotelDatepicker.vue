@@ -19,11 +19,14 @@
         </div>
         <div class="vhd-calendar-left">
           <div class="calendar-month">
-            <a :class="disabledPreviousArrow(startMonthDate)" class="previous-arrow offset-2" @click="updateCalendar(-2)">
+           <!-- <a :class="disabledPreviousArrow(startMonthDate)" class="previous-arrow offset-2" @click="updateCalendar(-2)">
               <IconArrowBack class="arrow" />
             </a>
             <a :class="disabledPreviousArrow(startMonthDate)" class="previous-arrow offset-1" @click="updateCalendar(-1)">
               <IconArrowBack class="arrow"/>
+            </a>-->
+            <a class="previous-arrow" @click="updateCalendar(-2)">
+              <IconArrowBack class="arrow" />
             </a>
             <div class="calendar-month-title">
               {{ monthList[startMonthDate.getMonth()] }} {{ startMonthDate.getFullYear() }}
